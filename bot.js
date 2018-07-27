@@ -27,7 +27,12 @@ client.on('message', message => {
      if (message.content === 'help') {
 
        message.reply('Ping : sees if the bots running fine , help: This screen , say: says what you said , !kick : kicks a player (you cannot add a reason yet ) , !ban : bans a player (you cannot add a reason yet)');
-        } 
+        }  else
+         
+         if (message.startsWith("say") == true) {//Check if the message send starts with "say"
+    var newMessage = message.replace("say ", "");//Making a variable where "say " is removed
+    bot.sendMessage({to: channelID, message:newMessage})//Send the new variable.
+} else
                      
                      
 });
