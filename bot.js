@@ -27,7 +27,7 @@ client.on('message', message => {
        } else 
      if (message.content === '!help') {
 
-       message.reply('Ping : sees if the bots running fine , help: This screen , say: says what you said , !kick : kicks a player (you cannot add a reason yet ) , !ban : bans a player (you cannot add a reason yet)');
+       message.reply('Ping : sees if the bots running fine , help: This screen ,');
         } 
   
                      
