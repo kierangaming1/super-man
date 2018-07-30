@@ -22,7 +22,7 @@ if (message.content === '!info') {
 
        } else 
                      
-      
+ 
  if(message.content.startsWith("!ping")) {
             message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");  
        } else 
@@ -30,8 +30,6 @@ if (message.content === '!info') {
 
        message.reply('Ping : sees if the bots running fine , help: This screen , !kick : kicks a user');
         } else 
-  
-                     
 
   // If the message content starts with "!kick"
   if (message.content.startsWith('!kick')) {
