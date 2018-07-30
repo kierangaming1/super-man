@@ -28,7 +28,7 @@ if (message.content === '!info') {
        } else 
      if (message.content === '!help') {
 
-       message.reply('Ping : sees if the bots running fine , help: This screen , !kick : kicks a user');
+       message.reply('Ping : sees if the bots running fine , help: This screen , !kick : kicks a user, !ban : bans a user');
         } else 
 
   // If the message content starts with "!kick"
