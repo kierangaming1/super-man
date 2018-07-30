@@ -107,7 +107,13 @@ if (message.content === '!info') {
     // Otherwise, if no user was mentioned
       message.reply('You didn\'t mention the user to ban!');
     }
-  }
+  } 
+  if ( msg.content.startsWith("!purge" ) ) {
+    if ( msg.channel.permissionsFor( msg.member ).hasPermission( "MANAGE_MESSAGES" ) ) {
+    let args = msg.content.split( " " ).slice( 1 );
+    let amount = args[ 0 ]
+    }
+}
 });
 
 
